@@ -1,6 +1,6 @@
 package VererbungHase;
 
-public class Hase {
+public class Hase implements GoesToParty{
     private String name;
 
 
@@ -28,5 +28,10 @@ public class Hase {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    @Override
+    public void party(String cake, String favDrink) {
+        System.out.println(name + " geht zur Party und isst " + cake + " und trinkt " + favDrink + ".");
     }
 }
